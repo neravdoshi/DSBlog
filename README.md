@@ -8,8 +8,8 @@ As mentioned in medium article, our goal is to build an intelligent inventory an
 ## Learning objectives
 After completing this tutorial, the user will learn:
 
-* How to upload data to IBM Watson Studio
-* How to use the SPSS tool to understand prepare and build predictive model
+* How to upload data to IBM Watson Studio and understand the data 
+* How to use the SPSS tool to prepare and build predictive model within Watson Studio
 * Build Optimization model using model builder within Watson Studio
 
 ## Prerequisites
