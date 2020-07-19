@@ -7,10 +7,10 @@ This lab will use the [COVID data set](https://www.kaggle.com/fireballbyedimyrnm
 1. [Create Watson Studio service on IBM Cloud](#1-Create-a-Watson-Studio-service-on-IBM-Cloud)
 2. [Create a project in Watson Studio and upload the data](#2-create-a-project-in-Watson-Studio-and-upload-the-data)
 3. [Use the Data Refinery Tool](#3-use-the-data-refinery-tool)
-   * a. Profile the data to help determine missing values
-   * b. Visualize the data to gain a better understanding
-   * c. Prepare the data for modeling
-   * d. Run the sequence of data preparation operations on the entire data set. 
+    * Profile the data to help determine missing values
+    * Visualize the data to gain a better understanding
+    * Prepare the data for modeling
+    * Run the sequence of data preparation operations on the entire data set. 
 
 ### 1. Create Watson Studio service on IBM Cloud
 
