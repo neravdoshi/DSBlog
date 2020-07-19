@@ -64,6 +64,18 @@ Watson Studio instance page, which says `Welcome to Watson Studio. Let's get sta
 * Once the upload has finished, you should see it under data asset of the project 
 
 ### 3. Use the Data refinery tool
-'Click' three dots on uploaded data and click 'refine'
+* 'Click'. three dots on uploaded data and click 'refine'.
 
-![addProj](../images/refinedata.png)
+![refineProj](../images/refinedata.png)
+
+* The Data Refinery panel will display the us county Covid-19 data set. Click on the 'Profile' tab.  
+
+![refineProj](../images/profile.png)
+
+* The Profile panel displays the counts of the top 10 count values for each column. Note that you can change 10 to another number if desired. You can also switch to the bottom 10 counts for a column. Scroll to the right to view the all column
+
+![refineProj](../images/visualization.png)
+
+* Note that the flips column has a specific code for counties, this may vary for metro areas and should be removed as part of the data preparation step.  
+
+* Data Understanding - Click on 'Vizualizations' tab 
