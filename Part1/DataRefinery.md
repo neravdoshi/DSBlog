@@ -34,7 +34,7 @@ to understand the main functionality of the service.
 
 ![watsonStudio](https://media.github.ibm.com/user/79254/files/e493eb80-8626-11ea-87b5-f1c7cf8d50e0)
 
-### 2. Create a project in Watson Studio and upload the data
+### 2.Create a project in Watson Studio and upload the data
 
 * To launch your Watson Studio service, go back to the home page by clicking on `IBM Cloud` in the top-left corner. There you see your services, and under there you should see your service name. This might take a minute or two to update. 
 
@@ -43,7 +43,7 @@ Watson Studio instance page, which says `Welcome to Watson Studio. Let's get sta
 
 * This takes you to the Watson Studio tooling. There you see a heading that says `Start by creating a project` and a button that says `Create Project`. Click on `Create a Project`. Next click on `Create an Empty project`.
 
-* On the create a new project page, name your project. One may name the project - `insurance-demo`. You also need to associate an IBM Cloud Object store instance, so that you store the data set.
+* On the create a new project page, name your project. One may name the project - `emergencyresponse`. You also need to associate an IBM Cloud Object store instance, so that you store the data set.
 
 * Under `Select Storage service` click on the `Add` button. This takes you to the IBM Cloud Object Store service page. Leave the service on the `Lite` tier and then click the `Create` button at the bottom of the page. You are prompted to name the service and choose the resource group. Once you select a name, click the resource group `Confirm` button. 
 
@@ -57,10 +57,13 @@ Watson Studio instance page, which says `Welcome to Watson Studio. Let's get sta
 
 * Select `Data`.
 
-* On the right-hand side bar, click on `browse` and then go to where you cloned the repository, and select `TM1 Import.csv`.
+* On the right-hand side bar, click on `browse` and then go to where you cloned the repository, and select `us-counties.csv`.
 
 ![addProj](../images/browse.png)
 
-* Once the upload has finished, you should see `Upload Successful` as shown below. 
+* Once the upload has finished, you should see it under data asset of the project 
 
-![addProj](../images/success.png)
+### 3. Use the Data refinery tool
+'Click' three dots on uploaded data and click 'refine'
+
+![addProj](../images/refinedata.png)
