@@ -64,11 +64,11 @@ Watson Studio instance page, which says `Welcome to Watson Studio. Let's get sta
 * Once the upload has finished, you should see it under data asset of the project 
 
 ### 3. Use the Data refinery tool
-* 'Click'. three dots on uploaded data and click 'refine'.
+* Click three dots on uploaded data and click `Refine`.
 
 ![refineProj](../images/refinedata.png)
 
-* The Data Refinery panel will display the us county Covid-19 data set. Click on the 'Profile' tab.  
+* The Data Refinery panel will display the us county Covid-19 data set. Click on the `Profile`. tab.  
 
 ![refineProj](../images/profile.png)
 
@@ -78,4 +78,23 @@ Watson Studio instance page, which says `Welcome to Watson Studio. Let's get sta
 
 * Note that the flips column has a specific code for counties, this may vary for metro areas and should be removed as part of the data preparation step.  
 
-* Data Understanding - Click on 'Vizualizations' tab 
+* Data Understanding - Click on `Vizualizations`. tab
+![refineProj](../images/visualizedata.png)
+
+* Let’s take a look at the breakdown of counties and cases. Add cases and county
+![refineProj](../images/columnsvisualize.png)
+
+* It will automatically pick a chart type based on columns chosen and show the chart 
+![refineProj](../images/chart.png)
+
+* On the left side pick column named cases under size and you will see a preview of the chart with counties with cases based on total count of cases Th chart will show the size size of dot and scale of the dots on right hand side 
+
+![refineProj](../images/chartsize.png)
+
+* Click on `Dual Y axis`. to change the chart type. You can see the cases with bar and line for mean of cases
+![refineProj](../images/dualchart.png)
+
+### 4. Prepare the data for modeling
+Based on the data analysis, we need to do the following to prepare the data for modeling.   
+* Remove columns fips 
+* Convert column type and create a new column for date
