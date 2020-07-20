@@ -107,29 +107,33 @@ Based on the data analysis, we need to do the following to prepare the data for 
 
 * Convert the date column from a String to a Date. Click `Operations` click on Convert `Column type`., and then check Automatically convert column and select the type to date from the dropdown menu for date and then select `MDY`. format. Click `Apply`.
  
-![refinedata](../images/convertcolumn.gif)
+![refinedata](../images/convertcolumn.png)
 
 *  Notice the STEPS panel on the right-hand side that provides a running list of the data operations.  Save the Data Flow by clicking on the Save Data Flow icon.
 ![refinedata](../images/saveicon.png)
 
 ### 5. Run the sequence of Data Flow operations on the entire data set.  
 * When users are interacting with the Data Refinery tool, the operations are applied to a subset of the data set to facilitate faster response times. To run the data operations on the entire data set, the user selects the Jobs icon.Selecting the Jobs icon, results in a drop down, select Save and create a job 
-![refinedataflow](../images/saveandcreate.png)
+![refinedataflow](../images/saveandcreatejob.png)
 
 * This action results in the following page display. Fill in the Job Name, for example uscounty_flow_job, leave the default for runtime, and click on the Create and Run button to run the job. 
 ![refinedataflow](../images/createjob.png)
 
 * The output of the Data Refinery process should be listed in the Data Assets. Click on emergencyresponse
-![refinedataflow](../images/clickemergencyrsponse.png)
+![refinedataflow](../images/clickemergencyresponse.png)
 
 * The asset contents are displayed below. Review to confirm that the data transformations specified have been applied to all the data.
 ![refinedataflow](../images/shaped_data_asset.png)
 
 ## Summary
 You have completed the Lab !!!                  
-✓ Profiled the data to help determine missing values 
-✓ Visualized the data to gain a better understanding  
-✓ Prepared the data for modeling 
-✓ Ran the sequence of data preparation operations on the entire data set.  
-✓ Verified the output data asset.  
+   ✓ Profiled the data to help determine missing values 
+   
+   ✓ Visualized the data to gain a better understanding  
+   
+   ✓ Prepared the data for modeling 
+   
+   ✓ Ran the sequence of data preparation operations on the entire data set
+   
+   ✓ Verified the output data asset.  
   
