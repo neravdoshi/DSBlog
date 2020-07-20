@@ -91,7 +91,10 @@ Watson Studio instance page, which says `Welcome to Watson Studio. Let's get sta
 
 ![refineProj](../images/chartsize.png)
 
-* Click on `Dual Y axis`. to change the chart type. You can see the cases with bar and line for mean of cases
+* Click on `Dual Y axis`. to change the chart type. 
+![refineProj](../images/switchchart.png)
+
+* You can see the cases with bar and line for mean of cases
 ![refineProj](../images/dualchart.png)
 
 ### 4. Prepare the data for modeling
@@ -99,6 +102,34 @@ Based on the data analysis, we need to do the following to prepare the data for 
 * Remove columns fips 
 * Convert column type and create a new column for date
 
-*  Return to the Data panel by clicking on the `Data`. tab.Remove the fips column by selecting on the vertical ellipse and then clicking on `Remove`. Convert the date column from a String to a Date by clicking on the vertical ellipse adjacent to the column, click on Convert Column, and then click on Date
+*  Return to the Data panel by clicking on the `Data`. tab.Remove the fips column by selecting on the vertical ellipse and then clicking on `Remove`. 
+![refinedata](../images/removefips.png)
+
+* Convert the date column from a String to a Date. Click `Operations` click on Convert `Column type`., and then check Automatically convert column and select the type to date from the dropdown menu for date and then select `MDY`. format. Click `Apply`.
  
-![refinedata](../images/dataconvert.gif)
+![refinedata](../images/convertcolumn.gif)
+
+*  Notice the STEPS panel on the right-hand side that provides a running list of the data operations.  Save the Data Flow by clicking on the Save Data Flow icon.
+![refinedata](../images/saveicon.png)
+
+### 5. Run the sequence of Data Flow operations on the entire data set.  
+* When users are interacting with the Data Refinery tool, the operations are applied to a subset of the data set to facilitate faster response times. To run the data operations on the entire data set, the user selects the Jobs icon.Selecting the Jobs icon, results in a drop down, select Save and create a job 
+![refinedataflow](../images/saveandcreate.png)
+
+* This action results in the following page display. Fill in the Job Name, for example uscounty_flow_job, leave the default for runtime, and click on the Create and Run button to run the job. 
+![refinedataflow](../images/createjob.png)
+
+* The output of the Data Refinery process should be listed in the Data Assets. Click on emergencyresponse
+![refinedataflow](../images/clickemergencyrsponse.png)
+
+* The asset contents are displayed below. Review to confirm that the data transformations specified have been applied to all the data.
+![refinedataflow](../images/shaped_data_asset.png)
+
+## Summary
+You have completed the Lab !!!                  
+✓ Profiled the data to help determine missing values 
+✓ Visualized the data to gain a better understanding  
+✓ Prepared the data for modeling 
+✓ Ran the sequence of data preparation operations on the entire data set.  
+✓ Verified the output data asset.  
+  
