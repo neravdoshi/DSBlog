@@ -1,22 +1,9 @@
-# RapidResponse
+# Use Decision Optimization  to optimize availability PPE equipment based on COVID-19 data for Michigan counties
 
-Examples and samples (Decision Optimization)
-There are several examples presented in this documentation as tutorials 
+## Tutorial
+Decision Optimization adds prescriptive analytics capabilities to IBM Watson Studio and IBM Watson Machine Learning. This hands-on lab is created around a simple Marketing Campaign problem. In 45 minutes, you set up a Watson Studio project and go through all the necessary steps to use Decision Optimization for Watson Studio and Decision Optimization for Watson Machine Learning.
 
-To use these samples:
-* Download and unzip the DO-samples from the Decision Optimization GitHub on to your machine.
-* Need to get docplex libraries downloaded from 
-* Open the notebook samples using Jupyter IDE
-
-OR
-
-Open the examples using IBM Watson Studio 
-Prerequisites
-* Create IBM Cloud Account using THIS URL https://ibm.biz/BdqcDV
-* Check your email and activate your account. Once activated, log back into your IBM Cloud account using the link above
-* If you already have an account, use the above URL to sign into your IBM Cloud account.
-Steps
-* Sign up / Log into IBM Cloud - https://ibm.biz/BdqcDV
-* Create a Watson Studio Service
-* Create a new project
-* Import the sample notebook to your project
+In this tutorial, you will explore the following key capabilities:
+ * You will learn how to build Optimization model
+ * A model builder to guide developers through the typical optimization development steps
+ * Dashboards for communicating the optimization model results
