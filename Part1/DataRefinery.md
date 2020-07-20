@@ -138,7 +138,7 @@ Based on the data analysis, we need to do the following to prepare the data for 
 
 * The asset contents are displayed below. Review to confirm that the data transformations specified have been applied to all the data.
 ![refinedataflow](../images/shaped_data_asset.png)
-![refinedataflow](../images/refinedata.png)
+![refinedataflow](../images/refinedatatable.png)
 
 ## Summary
 You have completed the Lab !!!                  
