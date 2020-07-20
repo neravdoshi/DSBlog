@@ -127,9 +127,13 @@ Based on the data analysis, we need to do the following to prepare the data for 
 
 ## Summary
 You have completed the Lab !!!                  
-✓ Profiled the data to help determine missing values 
-✓ Visualized the data to gain a better understanding  
-✓ Prepared the data for modeling 
-✓ Ran the sequence of data preparation operations on the entire data set.  
-✓ Verified the output data asset.  
+   ✓ Profiled the data to help determine missing values 
+   
+   ✓ Visualized the data to gain a better understanding  
+   
+   ✓ Prepared the data for modeling 
+   
+   ✓ Ran the sequence of data preparation operations on the entire data set
+   
+   ✓ Verified the output data asset.  
   
