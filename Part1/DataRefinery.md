@@ -121,8 +121,6 @@ Based on the data analysis, we need to do the following to prepare the data for 
 * Repeat above step to create a column for `Week`
 
 
-![refinedata](../images/convertcolumn.png)
-
 *  Notice the STEPS panel on the right-hand side that provides a running list of the data operations.  Save the Data Flow by clicking on the Save Data Flow icon.
 ![refinedata](../images/saveicon.png)
 
