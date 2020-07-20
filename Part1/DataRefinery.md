@@ -98,4 +98,7 @@ Watson Studio instance page, which says `Welcome to Watson Studio. Let's get sta
 Based on the data analysis, we need to do the following to prepare the data for modeling.   
 * Remove columns fips 
 * Convert column type and create a new column for date
+
+*  Return to the Data panel by clicking on the `Data`. tab.Remove the fips column by selecting on the vertical ellipse and then clicking on `Remove`. Convert the date column from a String to a Date by clicking on the vertical ellipse adjacent to the column, click on Convert Column, and then click on Date
+ 
 ![refinedata](../images/dataconvert.gif)
