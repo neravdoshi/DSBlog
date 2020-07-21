@@ -44,14 +44,10 @@ Completing this tutorial should take about 30 minutes.
 
 ![addProj](../images/migrate.png)
 
-* For the import node, click on `Data Assets` and then choose the `TM1 Import.csv` file, which contains our demand data for our retail products. Next, click `OK`.
+* For the import node, click on `Data Assets` and then choose the `us_counties_shaped.csv` file, which contains our COVID data from our part1. Next, click `OK`.
 
 ![addProj](../images/import.png)
 
-* For the export node, click on `Target Path` and then choose type out `predictedDemand`. This will be the file name that is created when our model outputs the
-predicted demand. This file will be saved to our current project in Watson Studio. Click `Migrate`.
-
-![addProj](../images/export.png)
 
 ### 3. Explore the data
 
@@ -71,18 +67,6 @@ features in your data set.
 
 ![addProj](../images/profile2.png)
 
-* Here you can notice that our data set which describes the
-demand at our retail store is broken up by
-month, in the `Period` column. Also, it provides further
-details on the markets our retail store operates in in the
-`Markets` column.
-
-* For the purpose of our demo, the most important column is `Actuals`
-which is the amount of demand that we have per product. Some of the
-statistics on this show that the median `Actuals` value is 59.5, and
-the maximum being `115`. This is great to know, since we want to ensure
-that we can stock up inventory to the max level, so that we know that
-we will not run out of stock.
 
 * Once you are done exploring the data set, you can return back to the flow
 by clicking on the flow name in the top-left breadcrumb.
@@ -92,7 +76,7 @@ Next, we will focus on the data prep nodes. These are the nodes
 which will modify our data set to predict just the values we want. A great way to understand what each node is
 doing is to `Preview` the node.
 
-* To preview a node, such as the `TM1 Import` node, hover over the node, and click on the three-dot symbol.
+* To preview a node, such as the `us-us_counties_shaped` node, hover over the node, and click on the three-dot symbol.
 
 ![addProj](../images/threeDot.png)
 
@@ -109,65 +93,29 @@ once you've previewed the node.
 and then on `Preview`.
 
 * Once you preview the node, you should see that the Date node adds another column to the data set, called
-`Date` and derives that value from the `Period` column.
+`Date` and derives that value from the `Reported_Date` column.
 
 ![addProj](../images/date.png)
 
-* The `Filter` node, which comes right after the `Date` node, takes out the `Statistical Base Forecast column`, and leaves the other columns as is.
+*
 
 * Next, the `Select` node is very important. It's going to take a subset of the data, and it will use an expression to do so. You can
-see in the expression, we have only taken the `US` markets, and the `Date` when it is before Jan 2019. This will enable use to make more
-specific predictions, only for the `US` market, since that is where our retail store manager that we want to focus on is located. If you
-preview this node, you will see that the `Markets` column does not feature any value other than `US`.
+see in the expression, we have only taken the `Michigan` state counties.
 
 ![addProj](../images/select.png)
 
 * The last of the data prep nodes is the `Type` node. This enables us to make specific operations on the fields within our data set. In
-this node, we split the `Products` column into individual values, so that we can later predict demand
+this node, we split the `Counties` column into individual values, so that we can later predict cases
 for each of our products within that column.
 
 ![addProj](../images/type.png)
 
-* Next, the restructure node creates new columns for the dataset. It takes the values from the
-`Products` column, and adds the `Actual` demand value for that product, in a separate column, so that
-demand for a specific product is easily distinguishable.
-
-* Hover over the `Restructure` node, click on the `Three-dot` symbol, and then `Preview` to see the
-new columns that are added to our data set.
-
-![addProj](../images/restructure.png)
-
-* Also, feel free to `Open` the node as well, which will show you how we generated multiple fields
-from merging the `Products` and `Actuals` columns.
-
-![addProj](../images/openRestructure.png)
-
-* Hover over the `Aggregate` and then click `Open`.
-There, you will see that we are taking the largest
-value from the fields such as `Products_mask_Actuals` that we created above. This is because we want  and ensure we have enough in inventory to
-satisfy the maximum demand.
-
-![addProj](../images/aggregate.png)
-
-* Similarly, hover over the `Aggregate` node, click on the `Three-dot` symbol, and then `Preview` to see the
-new columns with the `_Max` suffix added to them.
-
-![addProj](../images/aggregatePreview.png)
-
-* Hover over the `Type` and then click `Open`.
-There, you will see we've designated the new
-fields that we created in the previous steps
-as the target variables, since we want to predict
-the max demand for each of the products within
-the `Products` column, within the `US` market.
-
-![addProj](../images/aggregate.png)
 
 ### 5. Train the ML model
 
-* Hover over the `29 fields` golden nugget and then click `Run`.
+* Right-click over the `cases & death` green nugget and then click `Open`.
 This will run the time-forecasting model with the data we have
-prepared in the previous steps.
+prepared in the previous steps. In the Model section select 5 days as we need to forecast for 5 days from the historic last date
 
 ![addProj](../images/runModel.png)
 
@@ -177,7 +125,7 @@ updated.
 
 ![addProj](../images/outputs.png)
 
-### 6. Evaluate the results 
+### 6. Evaluate the results
 
 * Double-click on `Analysis of [29 fields]` in the Outputs tab.
 Here you can see an assessment of the mean error, maximum error
@@ -199,6 +147,7 @@ much higher due to these three months of training data. We can see this by the s
 charts.
 
 ![addProj](../images/10fields.png)
+![addProj](../images/timeseries.png)
 
 ### Summary
 
