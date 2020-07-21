@@ -46,16 +46,16 @@ You will also need to download and unzip the files in [Part3](https://github.com
 
 ### 3. Run model and analyze results
 * Click on `Run model` on model builder and then look at the optimization code written in python.Next is Click the `Run model`. This will pass the input data and python model to CPLEX engine to provide recommendation
-[runProj](../images/MBRunmodel.png)
+
+![runProj](../images/MBRunmodel.png)
 
 * Click on `Explore solution` on model builder and then look at the Objectives/KPI and Solutions tables link to review the output from optimization engine
-[runmodel](../images/MBExploreSol.png)
-[runmodel](../images/MBExploreKPI.png)
+![runmodel](../images/MBExploreKPI.png)
 
-* Click `Visualization` to review the pre-populated dashboard. 
-[runmodel](../images/DOvisualization.png)
-[runmodel](../images/DOsolution.png)
-[runmodel](../images/DOproductionchart.png)
+* Click `Visualization` to review the pre-populated dashboard.
+![runmodel](../images/DOvisualization.png)
+![runmodel](../images/DOsolution.png)
+![runmodel](../images/DOproductionchart.png)
 
 ### Summary
 
